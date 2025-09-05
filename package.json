@@ -7,11 +7,16 @@
   },
   "keywords": [],
   "author": "",
+   "type": "module",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "@types/node": "^24.3.1",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }

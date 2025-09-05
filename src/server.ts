@@ -1,18 +1,12 @@
-const http = require("http");
+import express from "express"
 
-const port = 3000;
+const app = express()
+const port = 3000
 
-const server = http.createServer((req : any, res:any) => {
-  res.setHeader("Content-type", "text/plain");
-  if (req.url === "/") {
-    res.statusCode = 200;
-    res.end("Home page");
-  } else if (req.url === "/about") {
-    res.statusCode = 200;
-    res.end("About Page");
-  }
-});
+app.get('/movies', (req, res) => {
+  res.send("pagina movies")
+})
 
-server.listen(port, () => {
-  console.log("🚀Server open in the port: " + port);
-});
+app.listen(port, () => {
+console.log("🚀Server open in the port: "+port )
+})

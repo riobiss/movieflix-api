@@ -39,6 +39,7 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "module": "esnext",
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
